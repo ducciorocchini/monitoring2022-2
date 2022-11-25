@@ -96,7 +96,8 @@ ggplot() + geom_raster(dvi1992, mapping=aes(x=x, y=y, fill=layer)) # fill=layer,
 # using a package so that colorblind people can understand 
 install.packages("viridis")
 library(viridis)
+
+ggplot() + 
+geom_raster(dvi1992, mapping=aes(x=x, y=y, fill=layer)) +
 scale_fill_viridis(option="magma")
-# error <ScaleContinuous>
- Range:  
- Limits:    0 --    1
+
